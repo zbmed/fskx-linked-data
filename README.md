@@ -6,7 +6,8 @@ This project is meant for developments regarding the transformation of the FSKX 
 
 ## The context
 `jsonld-context.json` contains a context object for JSON-LD, which is meant to be prepended to a filled-out FSKX metadata JSON file, to result in meaningful JSON-LD.
-- Contains the newest mappings found
-- `"?"` for items that still require a mapping
-- `"..."` used when a node's children still need to be inserted
-- `example.org`-mappings used as placeholder
+
+## Knowledge graph generator
+- `kg-generator.py` is a utility script that can prepend the JSON-LD context to a given filled-out FSKX metadata JSON file, and save the resulting knowledge graph in the `JSON-LD` and `N-Quads` formats.
+- developed for python 3.9
+- requirements can be found in requirements.txt
